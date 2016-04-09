@@ -1,15 +1,16 @@
 //
 //  main.cpp
-//  ADP_Projects
+//  ADP_Project
 //
-//  Created by Norio Egi on 4/9/16.
+//  Created by Norio Egi on 4/8/16.
 //  Copyright © 2016 Capotasto. All rights reserved.
 //
 
-#include <iostream>
+#include "Assignment1.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    executeAssignment1();
+    
     return 0;
 }

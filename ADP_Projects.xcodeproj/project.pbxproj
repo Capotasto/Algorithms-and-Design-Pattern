@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A1D64101CB99EEA00661983 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D640F1CB99EEA00661983 /* main.cpp */; };
+		1A1D64191CB99F1900661983 /* Assignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D64161CB99F1900661983 /* Assignment1.cpp */; };
+		1A1D641A1CB99F1900661983 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D64181CB99F1900661983 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		1A1D640C1CB99EEA00661983 /* ADP_Projects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ADP_Projects; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A1D640F1CB99EEA00661983 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1A1D64161CB99F1900661983 /* Assignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment1.cpp; sourceTree = "<group>"; };
+		1A1D64171CB99F1900661983 /* Assignment1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assignment1.hpp; sourceTree = "<group>"; };
+		1A1D64181CB99F1900661983 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		1A1D640E1CB99EEA00661983 /* ADP_Projects */ = {
 			isa = PBXGroup;
 			children = (
-				1A1D640F1CB99EEA00661983 /* main.cpp */,
+				1A1D64161CB99F1900661983 /* Assignment1.cpp */,
+				1A1D64171CB99F1900661983 /* Assignment1.hpp */,
+				1A1D64181CB99F1900661983 /* main.cpp */,
 			);
 			path = ADP_Projects;
 			sourceTree = "<group>";
@@ -118,7 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1D64101CB99EEA00661983 /* main.cpp in Sources */,
+				1A1D64191CB99F1900661983 /* Assignment1.cpp in Sources */,
+				1A1D641A1CB99F1900661983 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
