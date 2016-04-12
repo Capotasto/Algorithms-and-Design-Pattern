@@ -7,10 +7,16 @@
 //
 
 #include "Assignment1.hpp"
+#include "stdLibraryClass.hpp"
+#include "stdVectors.hpp"
+#include "Assignment2.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    executeAssignment1();
+    //executeAssignment1();
+    //mainStdLibraryCalss();
+    //mainStdVectors();
+    mainAssignment2();
     
     return 0;
 }

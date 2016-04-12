@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1A1D64191CB99F1900661983 /* Assignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D64161CB99F1900661983 /* Assignment1.cpp */; };
 		1A1D641A1CB99F1900661983 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D64181CB99F1900661983 /* main.cpp */; };
+		1A4EA4DE1CBC5D640060F2BB /* stdLibraryClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */; };
+		1A4EA4E41CBC66EC0060F2BB /* stdVectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */; };
+		1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		1A1D64161CB99F1900661983 /* Assignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment1.cpp; sourceTree = "<group>"; };
 		1A1D64171CB99F1900661983 /* Assignment1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assignment1.hpp; sourceTree = "<group>"; };
 		1A1D64181CB99F1900661983 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdLibraryClass.cpp; sourceTree = "<group>"; };
+		1A4EA4DD1CBC5D640060F2BB /* stdLibraryClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdLibraryClass.hpp; sourceTree = "<group>"; };
+		1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdVectors.cpp; path = ../stdVectors.cpp; sourceTree = "<group>"; };
+		1A4EA4E31CBC66EC0060F2BB /* stdVectors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = stdVectors.hpp; path = ../stdVectors.hpp; sourceTree = "<group>"; };
+		1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment2.cpp; sourceTree = "<group>"; };
+		1A4EA4E61CBC81440060F2BB /* Assignment2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assignment2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,12 @@
 				1A1D64161CB99F1900661983 /* Assignment1.cpp */,
 				1A1D64171CB99F1900661983 /* Assignment1.hpp */,
 				1A1D64181CB99F1900661983 /* main.cpp */,
+				1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */,
+				1A4EA4DD1CBC5D640060F2BB /* stdLibraryClass.hpp */,
+				1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */,
+				1A4EA4E31CBC66EC0060F2BB /* stdVectors.hpp */,
+				1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */,
+				1A4EA4E61CBC81440060F2BB /* Assignment2.hpp */,
 			);
 			path = ADP_Projects;
 			sourceTree = "<group>";
@@ -123,8 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4EA4E41CBC66EC0060F2BB /* stdVectors.cpp in Sources */,
 				1A1D64191CB99F1900661983 /* Assignment1.cpp in Sources */,
 				1A1D641A1CB99F1900661983 /* main.cpp in Sources */,
+				1A4EA4DE1CBC5D640060F2BB /* stdLibraryClass.cpp in Sources */,
+				1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +263,7 @@
 				1A1D64151CB99EEA00661983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
