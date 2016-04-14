@@ -11,9 +11,15 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <vector>
+#include <list>
+#include <algorithm>
+#include <deque>
+#include <map>
+#include <set>
+#include <stack>
+#include <queue>
 
 void mainAssignment2(void);
-void printOptions(void);
-
 
 #endif /* Assignment2_hpp */
