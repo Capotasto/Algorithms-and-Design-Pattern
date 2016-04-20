@@ -7,3 +7,17 @@
 //
 
 #include "exerSingleton.hpp"
+#include "singletonErrorLog.hpp"
+
+void exerSingleton(){
+    
+    SingletonErrorLog *pSystemSingleton;
+    SingletonErrorLog *pUserSingleton;
+    pSystemSingleton = SingletonErrorLog::Instance();
+    pUserSingleton = SingletonErrorLog::Instance();
+    
+    pSystemSingleton->output("SYSTEM", "Fatail Error!!!");
+    pSystemSingleton->output("USER", "Password Error!!!");
+    
+    
+}

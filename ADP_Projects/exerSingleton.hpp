@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void exerSingleton();
+
 #endif /* exerSingleton_hpp */

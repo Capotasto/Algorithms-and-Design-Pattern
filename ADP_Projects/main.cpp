@@ -11,6 +11,7 @@
 #include "stdVectors.hpp"
 #include "Assignment2.hpp"
 #include "proxyAssignment.hpp"
+#include "exerSingleton.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -18,7 +19,8 @@ int main(int argc, const char * argv[]) {
     //mainStdLibraryCalss();
     //mainStdVectors();
     //mainAssignment2();
-    proxyAssignment();
+    //proxyAssignment();
+    exerSingleton();
     
     return 0;
 }
