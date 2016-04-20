@@ -10,13 +10,15 @@
 #include "stdLibraryClass.hpp"
 #include "stdVectors.hpp"
 #include "Assignment2.hpp"
+#include "proxyAssignment.hpp"
 
 int main(int argc, const char * argv[]) {
     
     //executeAssignment1();
     //mainStdLibraryCalss();
     //mainStdVectors();
-    mainAssignment2();
+    //mainAssignment2();
+    proxyAssignment();
     
     return 0;
 }

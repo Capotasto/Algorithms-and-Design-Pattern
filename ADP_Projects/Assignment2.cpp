@@ -54,7 +54,7 @@ void createPriorityQueues(){
     
     //Pop from the Priority Queue
     //Print The Priority Queue
-    //std::priority_queue<int>::size_type size = priorityQueue.size();
+    
     
     while (!priorityQueue.empty()) {
         cout << priorityQueue.top() << std::endl;
