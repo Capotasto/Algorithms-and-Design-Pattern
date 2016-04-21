@@ -16,8 +16,8 @@
 
 using namespace std;
 
-class SingletonErrorLog
-{
+class SingletonErrorLog{
+    
 protected:
     SingletonErrorLog();
     

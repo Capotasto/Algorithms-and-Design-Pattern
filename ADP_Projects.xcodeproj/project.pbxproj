@@ -11,6 +11,7 @@
 		1A1D641A1CB99F1900661983 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D64181CB99F1900661983 /* main.cpp */; };
 		1A4282481CC70B1E005C4CDC /* exerSingleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4282461CC70B1E005C4CDC /* exerSingleton.cpp */; };
 		1A42824B1CC70C83005C4CDC /* singletonErrorLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4282491CC70C83005C4CDC /* singletonErrorLog.cpp */; };
+		1A4282581CC84703005C4CDC /* ternaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4282561CC84703005C4CDC /* ternaryTree.cpp */; };
 		1A4EA4DE1CBC5D640060F2BB /* stdLibraryClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */; };
 		1A4EA4E41CBC66EC0060F2BB /* stdVectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */; };
 		1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */; };
@@ -39,6 +40,10 @@
 		1A4282471CC70B1E005C4CDC /* exerSingleton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exerSingleton.hpp; sourceTree = "<group>"; };
 		1A4282491CC70C83005C4CDC /* singletonErrorLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = singletonErrorLog.cpp; sourceTree = "<group>"; };
 		1A42824A1CC70C83005C4CDC /* singletonErrorLog.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = singletonErrorLog.hpp; sourceTree = "<group>"; };
+		1A4282521CC83C34005C4CDC /* Treenode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Treenode.h; sourceTree = "<group>"; };
+		1A4282541CC83D9A005C4CDC /* Tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
+		1A4282561CC84703005C4CDC /* ternaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ternaryTree.cpp; sourceTree = "<group>"; };
+		1A4282571CC84703005C4CDC /* ternaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ternaryTree.hpp; sourceTree = "<group>"; };
 		1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdLibraryClass.cpp; sourceTree = "<group>"; };
 		1A4EA4DD1CBC5D640060F2BB /* stdLibraryClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdLibraryClass.hpp; sourceTree = "<group>"; };
 		1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdVectors.cpp; path = ../stdVectors.cpp; sourceTree = "<group>"; };
@@ -89,17 +94,21 @@
 				1A4EA4DD1CBC5D640060F2BB /* stdLibraryClass.hpp */,
 				1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */,
 				1A4EA4E31CBC66EC0060F2BB /* stdVectors.hpp */,
+				1A4EA4E61CBC81440060F2BB /* Assignment2.hpp */,
 				1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */,
-				1A98E80B1CC5A8A200DC1717 /* proxyAssignment.cpp */,
 				1A4282461CC70B1E005C4CDC /* exerSingleton.cpp */,
 				1A4282471CC70B1E005C4CDC /* exerSingleton.hpp */,
 				1A98E80C1CC5A8A200DC1717 /* proxyAssignment.hpp */,
-				1A4EA4E61CBC81440060F2BB /* Assignment2.hpp */,
+				1A98E80B1CC5A8A200DC1717 /* proxyAssignment.cpp */,
 				1A98E80E1CC5AA6C00DC1717 /* Implementation.h */,
 				1A98E80F1CC5ACA000DC1717 /* Interface.cpp */,
 				1A98E8101CC5ACA000DC1717 /* Interface.h */,
 				1A4282491CC70C83005C4CDC /* singletonErrorLog.cpp */,
 				1A42824A1CC70C83005C4CDC /* singletonErrorLog.hpp */,
+				1A4282521CC83C34005C4CDC /* Treenode.h */,
+				1A4282541CC83D9A005C4CDC /* Tree.hpp */,
+				1A4282561CC84703005C4CDC /* ternaryTree.cpp */,
+				1A4282571CC84703005C4CDC /* ternaryTree.hpp */,
 			);
 			path = ADP_Projects;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 				1A1D641A1CB99F1900661983 /* main.cpp in Sources */,
 				1A4EA4DE1CBC5D640060F2BB /* stdLibraryClass.cpp in Sources */,
 				1A42824B1CC70C83005C4CDC /* singletonErrorLog.cpp in Sources */,
+				1A4282581CC84703005C4CDC /* ternaryTree.cpp in Sources */,
 				1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

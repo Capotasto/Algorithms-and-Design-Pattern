@@ -12,6 +12,7 @@
 #include "Assignment2.hpp"
 #include "proxyAssignment.hpp"
 #include "exerSingleton.hpp"
+#include "ternaryTree.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -20,7 +21,8 @@ int main(int argc, const char * argv[]) {
     //mainStdVectors();
     //mainAssignment2();
     //proxyAssignment();
-    exerSingleton();
+    //exerSingleton();
+    ternaryTree();
     
     return 0;
 }
