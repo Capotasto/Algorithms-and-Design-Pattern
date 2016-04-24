@@ -17,6 +17,8 @@
 		1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */; };
 		1A98E80D1CC5A8A200DC1717 /* proxyAssignment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A98E80B1CC5A8A200DC1717 /* proxyAssignment.cpp */; };
 		1A98E8111CC5ACA000DC1717 /* Interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A98E80F1CC5ACA000DC1717 /* Interface.cpp */; };
+		1ADB28461CC9916A00D7A203 /* sortingExercise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB28441CC9916A00D7A203 /* sortingExercise.cpp */; };
+		1ADB28491CC99C2800D7A203 /* MySort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB28471CC99C2800D7A203 /* MySort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,10 @@
 		1A98E80E1CC5AA6C00DC1717 /* Implementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Implementation.h; sourceTree = "<group>"; };
 		1A98E80F1CC5ACA000DC1717 /* Interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interface.cpp; sourceTree = "<group>"; };
 		1A98E8101CC5ACA000DC1717 /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
+		1ADB28441CC9916A00D7A203 /* sortingExercise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sortingExercise.cpp; sourceTree = "<group>"; };
+		1ADB28451CC9916A00D7A203 /* sortingExercise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sortingExercise.hpp; sourceTree = "<group>"; };
+		1ADB28471CC99C2800D7A203 /* MySort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySort.cpp; sourceTree = "<group>"; };
+		1ADB28481CC99C2800D7A203 /* MySort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MySort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 				1A4282541CC83D9A005C4CDC /* Tree.hpp */,
 				1A4282561CC84703005C4CDC /* ternaryTree.cpp */,
 				1A4282571CC84703005C4CDC /* ternaryTree.hpp */,
+				1ADB28441CC9916A00D7A203 /* sortingExercise.cpp */,
+				1ADB28451CC9916A00D7A203 /* sortingExercise.hpp */,
+				1ADB28471CC99C2800D7A203 /* MySort.cpp */,
+				1ADB28481CC99C2800D7A203 /* MySort.hpp */,
 			);
 			path = ADP_Projects;
 			sourceTree = "<group>";
@@ -178,6 +188,8 @@
 				1A4EA4DE1CBC5D640060F2BB /* stdLibraryClass.cpp in Sources */,
 				1A42824B1CC70C83005C4CDC /* singletonErrorLog.cpp in Sources */,
 				1A4282581CC84703005C4CDC /* ternaryTree.cpp in Sources */,
+				1ADB28491CC99C2800D7A203 /* MySort.cpp in Sources */,
+				1ADB28461CC9916A00D7A203 /* sortingExercise.cpp in Sources */,
 				1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@
 #include "proxyAssignment.hpp"
 #include "exerSingleton.hpp"
 #include "ternaryTree.hpp"
+#include "sortingExercise.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -22,7 +23,8 @@ int main(int argc, const char * argv[]) {
     //mainAssignment2();
     //proxyAssignment();
     //exerSingleton();
-    ternaryTree();
+    //ternaryTree();
+    sortingExercise();
     
     return 0;
 }
