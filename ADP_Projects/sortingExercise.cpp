@@ -25,7 +25,10 @@ enum sort_option{
     TAG,//3
     BUCKET,//4
     INDEX,//5
-    SHELL//6
+    SHELL,//6
+    QUICK,//7
+    MERGE,//8
+    HEAP//9
     
 };
 
@@ -37,14 +40,18 @@ void showOption(){
          "4: Tag sort \n"
          "5: Bucket sort \n"
          "6: Index sort\n"
-         "7: shell sort");
+         "7: Shell sort\n"
+         "8: Quick sort\n"
+         "9: Merge sort\n"
+         "10: Heap sort\n"
+);
     
 }
 
 void makeRandomArray(int *array){
     
     //srand((int)time_t(NULL));
-    srand(time(NULL));
+    srand(time_t(NULL));
     int random;
     
     for (int i = 0; i < MAX_SORT; i++) {
@@ -105,14 +112,24 @@ void sortingExercise(){
             mysort.doTagSort(array, MAX_SORT);
             break;
         case BUCKET:
-            mysort.doBucketSort(array, MAX_SORT);
+            mysort.doBucketSort(array);
             break;
         case INDEX:
-            mysort.doIndexSort(array, MAX_SORT);
+            mysort.doIndexSort(array);
             break;
         case SHELL:
-            mysort.doShellSort(array, MAX_SORT);
+            mysort.doShellSort(array);
             break;
+        case QUICK:
+            mysort.doQuickSort(array);
+            break;
+        case MERGE:
+            mysort.doMergeSort(array);
+            break;
+        case HEAP:
+            mysort.doHeapSort(array);
+            break;
+            
             
         default:
             cout << "Somting is wrong." << endl;

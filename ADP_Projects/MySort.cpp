@@ -145,36 +145,126 @@ void MySort::doTagSort(int *array, int max){
     puts("\n");
 
 }
-void MySort::doBucketSort(int *array, int max){
+void MySort::doBucketSort(int *array){
     
-    int arrayBucket[10][10];
+    int arraySorted[SIZE_SORT];
+    int arrayBucket[ROW_SORT][COL_SORT];
+    
+    //init
     for (int i = 0 ; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
             arrayBucket[i][j] = -1;
         }
     }
     
-    for (int i = 0; i < SIZE_SORT; i++) {
-        if (array[i] < 10) {
-            for (int j = 0; j < COL_SORT; j++) {
-                if (arrayBucket[array[i]][j] != -1) {
-                    arrayBucket[array[i]][j] = array[i];
-                    break;
-                }
-            }
-        }else{
-        
+    //addBucket ones
+    for (int i = 0;  i < SIZE_SORT; i++) {
+        int temp = *(array+i) % 10;
+        addToBucket(array, arrayBucket, temp ,i);
+    }
+    
+    //Back to SortedArray.
+    backToArray(arrayBucket, arraySorted);
+    
+    //Init
+    for (int i = 0 ; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            arrayBucket[i][j] = -1;
         }
     }
     
+    //addBucket tens
+    for (int i = 0;  i < SIZE_SORT; i++) {
+        int temp = *(arraySorted+i) / 10;
+        addToBucket(arraySorted, arrayBucket, temp ,i);
+    }
+    
+    backToArray(arrayBucket, arraySorted);
+    
+    
+    for (int i = 0 ; i < SIZE_SORT; i++) {
+        printf("arraySorted[%d] = %d\n", i , arraySorted[i]);
+    }
+    
+}
+void MySort::doIndexSort(int *array){
+    
+    int arrayIndex[ROW_SORT * COL_SORT];
+    
+    //init
+    for (int i = 0 ; i < ROW_SORT * COL_SORT; i++) {
+        for (int j = 0; j < SIZE_SORT; j++) {
+            if (i == *(array + j)) {
+                arrayIndex[i] = *(array+ j);
+                break;
+            }else{
+                arrayIndex[i] = -999;
+            }
+        }
+    }
+    
+    //print
+    for (int i = 0 ; i < ROW_SORT * COL_SORT; i++) {
+        if (arrayIndex[i] != -999) {
+            printf("%2d ", arrayIndex[i]);
+        }
+    }
+    puts("");
+}
+
+void MySort::doShellSort(int *array){
+    
     
     
 }
-void MySort::doIndexSort(int *array, int max){
+
+void MySort::doQuickSort(int *array){
+    
+    //int array1[]
+    
     
 }
-void MySort::doShellSort(int *array, int max){
+
+
+void MySort::doMergeSort(int *array){
     
+    
+    
+}
+
+
+void MySort::doHeapSort(int *array){
+    
+    
+    
+}
+
+
+void MySort::addToBucket(int *array, int arrayBucket[ROW_SORT][COL_SORT], int digit, int index){
+
+    for (int i = 0; i < COL_SORT; i++) {
+        if(arrayBucket[digit][i] != -1){
+            continue;
+        }else{
+            arrayBucket[digit][i] = *(array + index);
+            break;
+        }
+    }
+}
+
+void MySort::backToArray(int arrayBucket[ROW_SORT][COL_SORT], int *array){
+    int k = 0;
+    for (int i = 0; i < ROW_SORT; i++) {
+        for (int j = 0; j< COL_SORT; j++) {
+            if (arrayBucket[i][j] != -1) {
+                array[k] = arrayBucket[i][j];
+                k++;
+            }else{
+                break;
+            }
+        }
+    }
+
 }
 
 int MySort::getMinimumPostion(int *array, int *tagArray){

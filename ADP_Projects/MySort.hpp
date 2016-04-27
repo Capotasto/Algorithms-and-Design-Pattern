@@ -13,7 +13,7 @@
 
 #endif /* MySort_hpp */
 
-const int SIZE_SORT = 5;
+const int SIZE_SORT = 20;
 const int ROW_SORT = 10;
 const int COL_SORT = 10;
 
@@ -24,12 +24,17 @@ public:
     void doInsertionSort(int *, int );
     void doBubbleSort(int *, int );
     void doTagSort(int *, int);
-    void doBucketSort(int *, int );
-    void doIndexSort(int *, int );
-    void doShellSort(int *, int );
+    void doBucketSort(int *);
+    void doIndexSort(int *);
+    void doShellSort(int *);
+    void doQuickSort(int *);
+    void doMergeSort(int *);
+    void doHeapSort(int *);
     ~MySort();
 
 private:
+    void addToBucket(int *array, int arrayBucket[ROW_SORT][COL_SORT], int digit, int index);
+    void backToArray(int arrayBucket[ROW_SORT][COL_SORT], int *array);
     int getMinimumPostion(int *array, int *tagArray);
     bool hasIndex(int *array, int num);
 };
