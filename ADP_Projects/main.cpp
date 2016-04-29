@@ -14,6 +14,7 @@
 #include "exerSingleton.hpp"
 #include "ternaryTree.hpp"
 #include "sortingExercise.hpp"
+#include "smartPointer.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -25,6 +26,7 @@ int main(int argc, const char * argv[]) {
     //exerSingleton();
     //ternaryTree();
     sortingExercise();
+    //mainSmartPointer();
     
     return 0;
 }

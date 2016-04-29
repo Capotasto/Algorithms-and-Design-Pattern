@@ -86,7 +86,7 @@ void sortingExercise(){
     
     while (1) {
         cin >> input;
-        if (1 <= input && input <= 7) {
+        if (SELECTION <= input && input <= HEAP) {
             break;
         }else{
             cout << "Wrong Number!" << endl;

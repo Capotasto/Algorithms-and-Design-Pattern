@@ -12,6 +12,7 @@
 		1A4282481CC70B1E005C4CDC /* exerSingleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4282461CC70B1E005C4CDC /* exerSingleton.cpp */; };
 		1A42824B1CC70C83005C4CDC /* singletonErrorLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4282491CC70C83005C4CDC /* singletonErrorLog.cpp */; };
 		1A4282581CC84703005C4CDC /* ternaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4282561CC84703005C4CDC /* ternaryTree.cpp */; };
+		1A4430961CD1894700726AFE /* smartPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4430941CD1894700726AFE /* smartPointer.cpp */; };
 		1A4EA4DE1CBC5D640060F2BB /* stdLibraryClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */; };
 		1A4EA4E41CBC66EC0060F2BB /* stdVectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */; };
 		1A4EA4E71CBC81440060F2BB /* Assignment2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA4E51CBC81440060F2BB /* Assignment2.cpp */; };
@@ -46,6 +47,11 @@
 		1A4282541CC83D9A005C4CDC /* Tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		1A4282561CC84703005C4CDC /* ternaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ternaryTree.cpp; sourceTree = "<group>"; };
 		1A4282571CC84703005C4CDC /* ternaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ternaryTree.hpp; sourceTree = "<group>"; };
+		1A4430941CD1894700726AFE /* smartPointer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = smartPointer.cpp; sourceTree = "<group>"; };
+		1A4430951CD1894700726AFE /* smartPointer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = smartPointer.hpp; sourceTree = "<group>"; };
+		1A4430971CD19D6000726AFE /* smartPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smartPtr.h; sourceTree = "<group>"; };
+		1A4430A01CD1A28300726AFE /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		1A4430A11CD1A28300726AFE /* listnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listnode.h; sourceTree = "<group>"; };
 		1A4EA4DC1CBC5D640060F2BB /* stdLibraryClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdLibraryClass.cpp; sourceTree = "<group>"; };
 		1A4EA4DD1CBC5D640060F2BB /* stdLibraryClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdLibraryClass.hpp; sourceTree = "<group>"; };
 		1A4EA4E21CBC66EC0060F2BB /* stdVectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdVectors.cpp; path = ../stdVectors.cpp; sourceTree = "<group>"; };
@@ -77,7 +83,7 @@
 		1A1D64031CB99EEA00661983 = {
 			isa = PBXGroup;
 			children = (
-				1A1D640E1CB99EEA00661983 /* ADP_Projects */,
+				1A1D640E1CB99EEA00661983 /* list.h listnode.h */,
 				1A1D640D1CB99EEA00661983 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,9 +96,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A1D640E1CB99EEA00661983 /* ADP_Projects */ = {
+		1A1D640E1CB99EEA00661983 /* list.h listnode.h */ = {
 			isa = PBXGroup;
 			children = (
+				1A4430A01CD1A28300726AFE /* list.h */,
+				1A4430A11CD1A28300726AFE /* listnode.h */,
 				1A1D64161CB99F1900661983 /* Assignment1.cpp */,
 				1A1D64171CB99F1900661983 /* Assignment1.hpp */,
 				1A1D64181CB99F1900661983 /* main.cpp */,
@@ -119,7 +127,11 @@
 				1ADB28451CC9916A00D7A203 /* sortingExercise.hpp */,
 				1ADB28471CC99C2800D7A203 /* MySort.cpp */,
 				1ADB28481CC99C2800D7A203 /* MySort.hpp */,
+				1A4430941CD1894700726AFE /* smartPointer.cpp */,
+				1A4430971CD19D6000726AFE /* smartPtr.h */,
+				1A4430951CD1894700726AFE /* smartPointer.hpp */,
 			);
+			name = "list.h listnode.h";
 			path = ADP_Projects;
 			sourceTree = "<group>";
 		};
@@ -181,6 +193,7 @@
 			files = (
 				1A98E8111CC5ACA000DC1717 /* Interface.cpp in Sources */,
 				1A4282481CC70B1E005C4CDC /* exerSingleton.cpp in Sources */,
+				1A4430961CD1894700726AFE /* smartPointer.cpp in Sources */,
 				1A4EA4E41CBC66EC0060F2BB /* stdVectors.cpp in Sources */,
 				1A98E80D1CC5A8A200DC1717 /* proxyAssignment.cpp in Sources */,
 				1A1D64191CB99F1900661983 /* Assignment1.cpp in Sources */,

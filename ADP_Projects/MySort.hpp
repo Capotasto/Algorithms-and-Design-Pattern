@@ -9,7 +9,7 @@
 #ifndef MySort_hpp
 #define MySort_hpp
 
-#include <stdio.h>
+#include <iostream>
 
 #endif /* MySort_hpp */
 
@@ -33,6 +33,7 @@ public:
     ~MySort();
 
 private:
+    void searchPivot(int *array, int size, int *resultArray);
     void addToBucket(int *array, int arrayBucket[ROW_SORT][COL_SORT], int digit, int index);
     void backToArray(int arrayBucket[ROW_SORT][COL_SORT], int *array);
     int getMinimumPostion(int *array, int *tagArray);

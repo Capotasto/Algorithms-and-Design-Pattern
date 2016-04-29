@@ -143,7 +143,7 @@ void MySort::doTagSort(int *array, int max){
         
     }
     puts("\n");
-
+    
 }
 void MySort::doBucketSort(int *array){
     
@@ -214,22 +214,112 @@ void MySort::doIndexSort(int *array){
 
 void MySort::doShellSort(int *array){
     
+    int count = 1;
+    while (1) {
+        int space = SIZE_SORT /(2*count);
+        if (space == 1 ) {
+            break;
+        }
+        
+        for(int i = 0; i + space < SIZE_SORT ; i++) {
+            if (*(array + i) > *(array+i+space)) {
+                int temp = *(array+i+space);
+                *(array+i+space) = *(array + i);
+                *(array + i) = temp;
+            }
+        }
+        //print
+        for (int i = 0 ; i < SIZE_SORT; i++) {
+            printf("%3d ", array[i]);
+        }
+        puts("");
+        count++;
+    }
+    
+    doInsertionSort(array, SIZE_SORT);
+    
+    //print
+    for (int i = 0 ; i < SIZE_SORT; i++) {
+        printf("%3d ", array[i]);
+    }
+    puts("");
     
     
 }
 
 void MySort::doQuickSort(int *array){
     
-    //int array1[]
+    int resultArray[SIZE_SORT];
     
+    searchPivot(array, SIZE_SORT, resultArray);
+    
+    for (int i = 0 ; i < SIZE_SORT; i++) {
+        printf("resultArray[%d] = %d\n",i, *(resultArray+i));
+    }
     
 }
 
 
 void MySort::doMergeSort(int *array){
     
+    int mergeMax = 4;
+    int count = SIZE_SORT/mergeMax;
+    int subArray1[2];
+    int subArray2[2];
     
-    
+    for (int i = 0; i < count; i++) {
+        subArray1[0] = *(array + mergeMax*i);
+        subArray1[1] = *(array + mergeMax*i+1);
+        subArray2[0] = *(array + mergeMax*i+2);
+        subArray2[1] = *(array + mergeMax*i+3);
+        
+        if (subArray1[0] > subArray1[1]) {
+            int temp = subArray1[1];
+            subArray1[1] = subArray1[0];
+            subArray1[0] = temp;
+        }
+        
+        if (subArray2[0] > subArray2[1]) {
+            int temp = subArray2[1];
+            subArray2[1] = subArray2[0];
+            subArray2[0] = temp;
+        }
+        
+        if(subArray1[0] < subArray2[0]){
+            if(subArray2[0] < subArray1[1]){
+                if(subArray1[1] < subArray2[1]){
+                    *(array + mergeMax*i) = subArray1[0];
+                    *(array + mergeMax*i+1) = subArray2[0];
+                    *(array + mergeMax*i+2) = subArray1[1];
+                    *(array + mergeMax*i+3) = subArray2[1];
+                }else{
+                    *(array + mergeMax*i) = subArray1[0];
+                    *(array + mergeMax*i+1) = subArray2[0];
+                    *(array + mergeMax*i+2) = subArray2[1];
+                    *(array + mergeMax*i+3) = subArray1[1];
+                }
+            }else{
+                if(subArray2[0] < subArray2[1]){
+                    *(array + mergeMax*i) = subArray1[0];
+                    *(array + mergeMax*i+1) = subArray1[1];
+                    *(array + mergeMax*i+2) = subArray2[0];
+                    *(array + mergeMax*i+3) = subArray2[1];
+                }else{
+                    *(array + mergeMax*i) = subArray1[0];
+                    *(array + mergeMax*i+1) = subArray1[1];
+                    *(array + mergeMax*i+2) = subArray2[1];
+                    *(array + mergeMax*i+3) = subArray2[0];
+                }
+            }
+        }else{
+            if(subArray1[0] < subArray2[1]){
+                
+                
+            }else{
+                
+            }
+        }
+    }
 }
 
 
@@ -239,9 +329,89 @@ void MySort::doHeapSort(int *array){
     
 }
 
+void MySort::searchPivot(int *array, int size, int *resultArray){
+    
+    int pivot = *array;
+    
+    int size1 = 0, size2 =0;
+    
+    int *array1 = (int *)malloc(size1 * sizeof(int));
+    int *array2 = (int *)malloc(size2 * sizeof(int));
+    
+    for (int i = 1; i < size; i++) {
+        
+        if (*(array + i) <= pivot) {
+            size1++;
+            array1 = (int *)realloc(array1, size1 * sizeof(int));
+            if (array1 == NULL) {
+                puts("Pointer Exception array1");
+                exit(0);
+            }
+            *(array1+size1-1) = *(array + i);
+            printf("*(array1 + %d ) = %d\n", size1-1, *(array1+size1-1));
+            
+            
+        }else{
+            size2++;
+            array2 = (int *)realloc(array2, size2 * sizeof(int));
+            if (array2 == NULL) {
+                puts("Pointer Exception array2");
+                exit(0);
+            }
+            *(array2+size2-1) = *(array + i);
+            printf("*(array2 + %d ) = %d\n", size2-1, *(array2+size2-1));
+        }
+    }
+    
+    int *resultArray1 = NULL;
+    if (size1 > 1) {
+        resultArray1 = (int*)malloc(size1 * sizeof(int));
+        if (resultArray1 == NULL) {
+            puts("Pointer Exception resultArray1");
+            exit(0);
+        }
+        searchPivot(array1, size1, resultArray1);
+    }else{
+        resultArray1 = array1;
+    }
+    
+    int *resultArray2 = NULL;
+    if (size2 > 1) {
+        resultArray2 = (int*)malloc(size2 * sizeof(int));
+        if (resultArray2 == NULL) {
+            puts("Pointer Exception resultArray2");
+            exit(0);
+        }
+        searchPivot(array2, size2, resultArray2);
+    }else{
+        resultArray2 = array2;
+    }
+    
+    int j = 0;
+    for (int i = 0 ; i < size; i++) {
+        if (i < size1) {
+            *(resultArray+i) = *(resultArray1 + i);
+        }else if(i == size1 ){
+            *(resultArray+i) = pivot;
+        }else if(size1 < i){
+            *(resultArray+i) = *(resultArray2 + j);
+            j++;
+        }
+    }
+    
+    free(array1);
+    free(array2);
+    if (size1 > 1) {
+        free(resultArray1);
+    }
+    if (size2 > 1) {
+        free(resultArray2);
+    }
+}
+
 
 void MySort::addToBucket(int *array, int arrayBucket[ROW_SORT][COL_SORT], int digit, int index){
-
+    
     for (int i = 0; i < COL_SORT; i++) {
         if(arrayBucket[digit][i] != -1){
             continue;
@@ -264,7 +434,7 @@ void MySort::backToArray(int arrayBucket[ROW_SORT][COL_SORT], int *array){
             }
         }
     }
-
+    
 }
 
 int MySort::getMinimumPostion(int *array, int *tagArray){
