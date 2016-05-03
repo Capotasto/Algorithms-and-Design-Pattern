@@ -256,13 +256,25 @@ void MySort::doQuickSort(int *array){
     for (int i = 0 ; i < SIZE_SORT; i++) {
         printf("resultArray[%d] = %d\n",i, *(resultArray+i));
     }
-    
 }
 
 
 void MySort::doMergeSort(int *array){
     
-    int mergeMax = 4;
+    mergeTwoElements(array);
+    
+}
+
+
+void MySort::doHeapSort(int *array){
+    
+    
+    
+}
+
+void MySort::mergeTwoElements(int *array){
+    
+    int mergeMax = 2;
     int count = SIZE_SORT/mergeMax;
     int subArray1[2];
     int subArray2[2];
@@ -285,6 +297,7 @@ void MySort::doMergeSort(int *array){
             subArray2[0] = temp;
         }
         
+        //merge
         if(subArray1[0] < subArray2[0]){
             if(subArray2[0] < subArray1[1]){
                 if(subArray1[1] < subArray2[1]){
@@ -292,41 +305,41 @@ void MySort::doMergeSort(int *array){
                     *(array + mergeMax*i+1) = subArray2[0];
                     *(array + mergeMax*i+2) = subArray1[1];
                     *(array + mergeMax*i+3) = subArray2[1];
-                }else{
+                }else if(subArray1[1] > subArray2[1]){
                     *(array + mergeMax*i) = subArray1[0];
                     *(array + mergeMax*i+1) = subArray2[0];
                     *(array + mergeMax*i+2) = subArray2[1];
                     *(array + mergeMax*i+3) = subArray1[1];
                 }
-            }else{
+            }else if(subArray2[0] > subArray1[1]){{
                 if(subArray2[0] < subArray2[1]){
                     *(array + mergeMax*i) = subArray1[0];
                     *(array + mergeMax*i+1) = subArray1[1];
                     *(array + mergeMax*i+2) = subArray2[0];
                     *(array + mergeMax*i+3) = subArray2[1];
-                }else{
+                }else if(subArray2[0] > subArray2[1]){
                     *(array + mergeMax*i) = subArray1[0];
                     *(array + mergeMax*i+1) = subArray1[1];
                     *(array + mergeMax*i+2) = subArray2[1];
                     *(array + mergeMax*i+3) = subArray2[0];
                 }
             }
-        }else{
-            if(subArray1[0] < subArray2[1]){
-                
-                
-            }else{
+        }else if(subArray1[0] > subArray2[0]){
+            if(subArray1[0] > subArray2[1]){
+                if (subArray1[0] > subArray1[1]) {
+                    *(array + mergeMax*i) = subArray1[0];
+                    *(array + mergeMax*i+1) = subArray2[0];
+                    *(array + mergeMax*i+2) = subArray1[1];
+                    *(array + mergeMax*i+3) = subArray2[1];
+                }
+            }else if(subArray1[0] < subArray2[1]){
                 
             }
         }
     }
-}
+    
 
-
-void MySort::doHeapSort(int *array){
-    
-    
-    
+    }
 }
 
 void MySort::searchPivot(int *array, int size, int *resultArray){

@@ -18,7 +18,7 @@ void mainStdVectors(){
     << "\nThe initial capacity of v is: " << v.capacity();
     
     v.push_back(2); // method push_back() is in
-    v.push_back(3); //everysequencecollection
+    v.push_back(3); //every sequence collection
     v.push_back(4);
     
     std::cout << "\nThe size of v is: " << v.size()

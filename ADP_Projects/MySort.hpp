@@ -38,4 +38,5 @@ private:
     void backToArray(int arrayBucket[ROW_SORT][COL_SORT], int *array);
     int getMinimumPostion(int *array, int *tagArray);
     bool hasIndex(int *array, int num);
+    void mergeTwoElements(int *array);
 };
