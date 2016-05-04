@@ -1,4 +1,4 @@
-//
+x//
 //  main.cpp
 //  ADP_Project
 //
@@ -21,11 +21,11 @@ int main(int argc, const char * argv[]) {
     //executeAssignment1();
     //mainStdLibraryCalss();
     //mainStdVectors();
-    mainAssignment2();
+    //mainAssignment2();
     //proxyAssignment();
     //exerSingleton();
     //ternaryTree();
-    //sortingExercise();
+    sortingExercise();
     //mainSmartPointer();
     
     return 0;

@@ -90,6 +90,9 @@ void MySort::doInsertionSort(int array[20], int max){
     }
 }
 
+/**
+ doBulleSort
+ */
 void MySort::doBubbleSort(int *array, int max){
     
     puts("\nBubbleSort:");
@@ -115,6 +118,10 @@ void MySort::doBubbleSort(int *array, int max){
     
     
 }
+
+/**
+ doTagSort
+ */
 void MySort::doTagSort(int *array, int max){
     
     //init
@@ -145,6 +152,10 @@ void MySort::doTagSort(int *array, int max){
     puts("\n");
     
 }
+
+/**
+ doBucketSort
+ */
 void MySort::doBucketSort(int *array){
     
     int arraySorted[SIZE_SORT];
@@ -187,6 +198,10 @@ void MySort::doBucketSort(int *array){
     }
     
 }
+
+/**
+ doIndexSort
+ */
 void MySort::doIndexSort(int *array){
     
     int arrayIndex[ROW_SORT * COL_SORT];
@@ -266,11 +281,6 @@ void MySort::doMergeSort(int *array){
 }
 
 
-void MySort::doHeapSort(int *array){
-    
-    
-    
-}
 
 void MySort::mergeTwoElements(int *array){
     

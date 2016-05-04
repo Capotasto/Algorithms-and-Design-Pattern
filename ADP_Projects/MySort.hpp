@@ -29,7 +29,6 @@ public:
     void doShellSort(int *);
     void doQuickSort(int *);
     void doMergeSort(int *);
-    void doHeapSort(int *);
     ~MySort();
 
 private:

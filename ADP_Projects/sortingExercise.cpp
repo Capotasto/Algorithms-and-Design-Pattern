@@ -11,12 +11,14 @@
 #include "MySort.hpp"
 #include <stdbool.h>
 #include <time.h>
+#include "HeapSort.hpp"
+#include "QuickSort.hpp"
 
 using std::cout;
 using std::cin;
 using std::endl;
 
-const int MAX_SORT = 20;
+const int MAX_SORT = 10;
 
 enum sort_option{
     SELECTION,//0
@@ -86,7 +88,7 @@ void sortingExercise(){
     
     while (1) {
         cin >> input;
-        if (SELECTION <= input && input <= HEAP) {
+        if (SELECTION <= input-1 && input-1 <= HEAP) {
             break;
         }else{
             cout << "Wrong Number!" << endl;
@@ -121,13 +123,13 @@ void sortingExercise(){
             mysort.doShellSort(array);
             break;
         case QUICK:
-            mysort.doQuickSort(array);
+            mainQuickSort(array, MAX_SORT);
             break;
         case MERGE:
             mysort.doMergeSort(array);
             break;
         case HEAP:
-            mysort.doHeapSort(array);
+            mainHeapSort(array, MAX_SORT);
             break;
             
             
